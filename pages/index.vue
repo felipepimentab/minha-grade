@@ -1,9 +1,16 @@
 <template>
   <div class="container">
-    <h1>Home</h1>
+    <Table />
   </div>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style lang="scss">
+.container {
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+}
+</style>
