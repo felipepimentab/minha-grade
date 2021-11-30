@@ -2,6 +2,7 @@
   <div
     class="class"
     :class="itemClass"
+    :style="classStyle"
   >
     <span class="class__text">SEL0123</span>
   </div>
@@ -11,19 +12,27 @@
 export default {
   props: {
     startTime: {
-      type: String,
-      default: '00:00',
+      type: Object,
+      required: true,
     },
     endTime: {
-      type: String,
-      default: '00:00',
+      type: Object,
+      required: true,
     },
   },
 
   data() {
     return {
-      itemClass: 'h08-00',
+      classStyle: null,
     }
+  },
+
+  created() {
+    const startPosition = (this.startTime.hours - 6) * (100 / 18) + (this.startTime.minutes) * (100 / (18 * 60));
+    const classHeight = ((this.endTime.hours - 6) * (100 / 18) + (this.endTime.minutes) * (100 / (18 * 60))) - startPosition;
+
+    this.classStyle = `top: ${startPosition + '%'};
+                       height: ${classHeight + '%'};`
   }
 }
 </script>
@@ -31,17 +40,17 @@ export default {
 <style lang="scss" scoped>
 .class {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  position: relative;
   justify-content: center;
   background-color: rgba(#fff, 0.5);
-  width: calc(100%);
   border-radius: 3px;
-  font-size: 10px;
-  height: 20px;
 
   &__text {
     padding: 0 0.3rem;
+    font-weight: bold;
+    font-size: 10px;
   }
 }
-
 </style>

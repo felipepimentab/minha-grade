@@ -14,12 +14,14 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
+  overflow-x: hidden;
 }
 
 .app {
   width: 100vw;
   min-height: 100vh;
   position: absolute;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   font-size: 12px;

@@ -1,28 +1,23 @@
 <template>
   <div class="column">
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
-    <TableItem />
+    <TableItem :start-time="comeco" :end-time="fim"/>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      comeco: {
+        hours: 23,
+        minutes: 10,
+      },
+      fim: {
+        hours: 24,
+        minutes: 0
+      }
+    }
+  }
 }
 </script>
 
