@@ -1,9 +1,10 @@
 <template>
   <div
     class="class"
-    :class="itemClass"
     :style="classStyle"
   >
+    <span class="begin">{{ startTime.hours }}:{{ startTime.minutes === 0 ? '00' : startTime.minutes }}</span>
+    <span class="end">{{ endTime.hours }}:{{ endTime.minutes === 0 ? '00' : endTime.minutes }}</span>
     <span class="class__text">SEL0123</span>
   </div>
 </template>
@@ -42,7 +43,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  position: absolute;
+  width: 100%;
   justify-content: center;
   background-color: rgba(#fff, 0.5);
   border-radius: 3px;
@@ -51,6 +53,20 @@ export default {
     padding: 0 0.3rem;
     font-weight: bold;
     font-size: 10px;
+  }
+
+  .begin {
+    position: absolute;
+    font-size: 0.5rem;
+    top: 0;
+    left: 0.2rem;
+  }
+
+  .end {
+    position: absolute;
+    font-size: 0.5rem;
+    bottom: 0;
+    right: 0.2rem;
   }
 }
 </style>
