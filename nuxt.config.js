@@ -15,6 +15,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/sass/_breakpoints',
+    '~/assets/sass/_colors',
+    '~/assets/sass/_container',
+    '~/assets/sass/_fonts',
+    '~/assets/sass/_normalize',
+    '~/assets/sass/_variables',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

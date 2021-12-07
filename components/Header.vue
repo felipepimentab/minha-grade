@@ -37,11 +37,12 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  width: calc(100% - 2rem);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  background-color: rgba($color: #000, $alpha: 0.6);
 
   .title {
     font-size: 1.5rem;
@@ -60,15 +61,30 @@ export default {
       flex-direction: column;
       align-items: flex-end;
       position: fixed;
-      top: 10vh;
-      right: -80vw;
-      width: 80vw;
-      height: 90vh;
+      background-color: rgba($color: #000, $alpha: 0.6);
+      backdrop-filter: blur(0.1rem);
+      top: 4.25rem;
+      right: -100vw;
+      width: 100vw;
+      height: calc(100vh - 4.25rem);
+      padding: 1rem;
+      transition: all 0.5s ease-in-out;
+      z-index: 10;
 
       &--active {
         right: 0;
       }
+
+      &__item {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.5rem;
+      }
     }
+  }
+
+  .nuxt-link-exact-active {
+    color: white;
   }
 }
 </style>

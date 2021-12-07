@@ -1,6 +1,7 @@
 <template>
   <div class="table">
     <div class="table__head">
+      <div class="ghost"/>
       <div class="table__head__item">
         <span class="table__head__item__text">Segunda</span>
       </div>
@@ -161,7 +162,7 @@ export default {
           ]
         },
       ],
-    }
+    };
   }
 }
 </script>
@@ -176,6 +177,10 @@ export default {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 2rem 1fr 1fr 1fr 1fr 1fr;
+    }
 
     &__item {
       display: flex;
@@ -192,7 +197,7 @@ export default {
     &__timestamps {
       height: 25rem;
       margin-right: 0.25rem;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: flex-end;
       justify-content: space-between;
@@ -200,12 +205,23 @@ export default {
       .timestamp {
         font-size: 10px;
       }
+
+      @media screen and (min-width: 1024px) {
+        display: flex;
+      }
     }
 
     &__content {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .ghost {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
     }
   }
 }

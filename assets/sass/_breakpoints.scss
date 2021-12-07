@@ -1,0 +1,53 @@
+/*
+ * Breakpoints
+*/
+
+@mixin screen($size) {
+  @if $size == phone-only {
+    @media (max-width: 575px) {
+      @content;
+    }
+  }
+
+  @else if $size == phone-up {
+    @media (min-width: 375px) {
+      @content;
+    }
+  }
+
+  @else if $size == phone-big-up {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+
+  @else if $size == tablet-down {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $size == tablet-up {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $size == tablet-big-up {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $size == desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $size == desktop-big-up {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}

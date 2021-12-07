@@ -1,0 +1,71 @@
+/*
+ * --- Global
+*/
+
+// -- Radius
+// Ex.: border-radius: $radius-none;
+$radius-none: 0;          // 0px
+$radius-sm: 0.125rem;     // 2px
+$radius-normal: 0.25rem;  // 4px
+$radius-md: 0.375rem;     // 6px
+$radius-lg: 0.5rem;       // 8px
+$radius-full: 9999px;     // rounded
+
+// -- Border Size
+// Ex.: border-width: $border-1;
+$border-nome: 0;
+$border-1: 0.0625rem;  // 1px
+$border-2: 0.125rem;   // 2px
+
+/*
+ * --- Fonts
+*/
+
+// -- Family
+// Ex.: font-family: $font-sans;
+$font-sans: 'Montserrat', helvetica, arial, sans-serif; // Change to font-face for sans-serif
+
+// -- Weight
+// Ex.: font-weight: $font-thin;
+$font-hairline: 100;
+$font-thin: $font-hairline; // only fallback, ALWAYS USE $font-hairline
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-normal: $font-regular; // only fallback, ALWAYS USE $font-regular
+$font-bold: 700;
+$font-heavy: 800;
+$font-black: 900;
+
+// -- Size
+// Ex.: font-size: $text-sm;
+$text-3xs: 0.5rem;    // 8px
+$text-2xs: 0.6875rem; // 11px
+$text-xs: 0.75rem;    // 12px
+$text-sm:	0.875rem;   // 14px
+$text-base:	1rem;     // 16px
+$text-lg:	1.125rem;   // 18px
+$text-xl:	1.25rem;    // 20px
+$text-2xl: 1.5rem;    // 24px
+$text-3xl: 1.875rem;  // 30px
+$text-4xl: 2.25rem;   // 36px
+$text-5xl: 3rem;      // 48px
+$text-6xl: 4rem;      // 64px
+
+// -- Line height
+// Ex.: line-height: $leading-tight;
+$leading-none: 1;
+$leading-tight: 1.25;
+$leading-snug: 1.375;
+$leading-normal: 1.5;
+$leading-relaxed: 1.625;
+$leading-loose: 2;
+
+// -- Letter Spacing
+// Ex.: letter-spacing: $tracking-tight;
+$tracking-tighter: -0.05em; // -0.05 * (tamanho da fonte)
+$tracking-tight: -0.025em;  // -0.025 * (tamanho da fonte)
+$tracking-normal: 0;        // 0
+$tracking-wide: 0.025em;    // 0.025 * (tamanho da fonte)
+$tracking-wider: 0.05em;    // 0.05 * (tamanho da fonte)
+$tracking-widest: 0.1em;    // 0.1 * (tamanho da fonte)
