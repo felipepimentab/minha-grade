@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Table />
+    <Details />
   </div>
 </template>
 
@@ -10,7 +11,7 @@ export default {}
 
 <style lang="scss">
 .container {
-  width: calc(100% - 1rem);
+  width: 100%;
   padding: 0.5rem;
 }
 </style>
