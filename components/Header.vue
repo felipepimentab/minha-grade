@@ -48,7 +48,6 @@ export default {
     font-size: 1.5rem;
     color: #c3c3c7;
     text-decoration: none;
-    font-weight: bold;
   }
 
   .sandwich-menu {
@@ -77,7 +76,6 @@ export default {
 
       &__item {
         font-size: 1rem;
-        font-weight: 700;
         padding: 0.5rem;
       }
     }
