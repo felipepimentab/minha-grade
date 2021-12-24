@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'minha-grade',
+    title: 'Minha Grade',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,14 +15,23 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/sass/_breakpoints',
-    '~/assets/sass/_colors',
-    '~/assets/sass/_container',
-    '~/assets/sass/_fonts',
-    '~/assets/sass/_normalize',
-    '~/assets/sass/_variables',
+    '~layouts/global.css',
+    './assets/sass/base/_normalize.scss',
+    './assets/sass/base/_container.scss',
+    './assets/sass/project/_buttons.scss',
+    './assets/sass/project/_form.scss',
+    './assets/fonts/_fonts.scss',
+    '~assets/global.css',
   ],
 
+  // Variables and mixins
+  styleResources: {
+    scss: [
+      './assets/sass/base/_colors.scss',
+      './assets/sass/base/_variables.scss',
+      './assets/sass/base/_breakpoints.scss',
+    ],
+  },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -44,6 +53,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // style
+    '@nuxtjs/style-resources',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

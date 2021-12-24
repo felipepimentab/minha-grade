@@ -26,7 +26,7 @@ body, html {
   left: 0;
   font-size: 12px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  background: linear-gradient(150deg, #0c0b1f 0%, #131335 50%, #0c0b1f 100%);
+  background: linear-gradient(150deg, #1f182e 0%, #1e172c 50%, #2f2546 100%);
   color: #c3c3c7;
   display: flex;
   flex-direction: column;

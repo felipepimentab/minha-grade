@@ -39,8 +39,20 @@
     }
   }
 
+  @else if $size == limit {
+    @media (min-width: 1080px) {
+      @content;
+    }
+  }
+
   @else if $size == desktop-up {
     @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $size == fullsize-container {
+    @media (min-width: 1280px) {
       @content;
     }
   }

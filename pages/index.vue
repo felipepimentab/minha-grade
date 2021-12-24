@@ -11,8 +11,8 @@ export default {
   computed: {
     listOfClasses() {
       // return this.$store.state.classes.classList;
-      // return this.$store.state.classes.placeholderData;
-      return [];
+      return this.$store.state.classes.placeholderData;
+      // return [];
     }
   },
 }

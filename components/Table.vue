@@ -55,6 +55,7 @@ export default {
 .table {
   width: 100%;
   max-width: 50rem;
+  padding: 0.5rem;
   margin: auto;
 
   &__head {

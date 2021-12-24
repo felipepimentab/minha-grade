@@ -42,12 +42,17 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: rgba($color: #000, $alpha: 0.6);
+  background-color: rgba($color: #000, $alpha: 0.5);
 
   .title {
     font-size: 1.5rem;
+    font-weight: bold;
     color: #c3c3c7;
     text-decoration: none;
+
+    @include screen(tablet-big-up) {
+      font-size: 2rem;
+    }
   }
 
   .sandwich-menu {
@@ -60,7 +65,7 @@ export default {
       flex-direction: column;
       align-items: flex-end;
       position: fixed;
-      background-color: rgba($color: #000, $alpha: 0.6);
+      background-color: rgba($color: #000, $alpha: 0.5);
       backdrop-filter: blur(0.1rem);
       top: 4.25rem;
       right: -100vw;
