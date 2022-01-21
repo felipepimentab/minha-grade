@@ -64,7 +64,6 @@ export default {
   width: 100%;
   padding: 5px 2.5px;
   height: 25rem;
-  background-color: rgba($color: #000, $alpha: 0.6);
 
   &-content {
     width: 100%;

@@ -5,13 +5,14 @@
       <div class="sandwich-menu__icon">
         <BaseSvg
           name="Menu"
-          width="24px"
-          height="24px"
+          width="20px"
+          height="20px"
         />
       </div>
       <div class="side-menu" :class="{'side-menu--active' : menuIsOpen}">
         <NuxtLink to="/about" class="side-menu__item">Sobre</NuxtLink>
         <NuxtLink to="/classes" class="side-menu__item">Disciplinas</NuxtLink>
+        <NuxtLink to="/login" class="side-menu__item">Login</NuxtLink>
       </div>
     </div>
   </header>
@@ -42,22 +43,18 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: rgba($color: #000, $alpha: 0.5);
+  background-color: rgba($color: #fff, $alpha: 0);
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: #c3c3c7;
+    color: $text-main;
     text-decoration: none;
-
-    @include screen(tablet-big-up) {
-      font-size: 2rem;
-    }
   }
 
   .sandwich-menu {
     &__icon{
-      fill: #c3c3c7;
+      fill: $text-main;
     }
 
     .side-menu {

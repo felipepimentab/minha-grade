@@ -1,6 +1,6 @@
 export const state = () => ({
   classList: [],
-  selectedClass: null,
+  selectedClass: 1, // null
   placeholderData: [ // used fot testing
     {
       nome: 'Introdução à Visão Computacional',
@@ -15,6 +15,7 @@ export const state = () => ({
         link: 'https://meet.google.com/wbu-ioje-ybd?pli=1&authuser=1',
       },
       eletiva: true,
+      laboratorio: false,
       aulas: [
         {
           diaDaSemana: 2,
@@ -30,7 +31,7 @@ export const state = () => ({
         {
           diaDaSemana: 5,
           timeBegin: {
-            hours: 22,
+            hours: 20,
             minutes: 30,
           },
           timeEnd: {
@@ -38,7 +39,17 @@ export const state = () => ({
             minutes: 0,
           }
         },
-      ]
+      ],
+      entregas: [
+        {
+          nome: 'P1',
+          data: '23/04/2022',
+        },
+        {
+          nome: 'P2',
+          data: '15/06/2022',
+        }
+      ],
     },
 
     {
@@ -54,6 +65,7 @@ export const state = () => ({
         link: 'https://meet.google.com/twq-pcwm-sqf?pli=1&authuser=1',
       },
       eletiva: false,
+      laboratorio: false,
       aulas: [
         {
           diaDaSemana: 3,
@@ -77,7 +89,17 @@ export const state = () => ({
             minutes: 0,
           }
         }
-      ]
+      ],
+      entregas: [
+        {
+          nome: 'P1',
+          data: '23/04/2022',
+        },
+        {
+          nome: 'P2',
+          data: '15/06/2022',
+        }
+      ],
     },
 
     {
@@ -93,6 +115,7 @@ export const state = () => ({
         link: 'https://meet.google.com/eue-khdu-hpk?pli=1&authuser=1',
       },
       eletiva: false,
+      laboratorio: false,
       aulas: [
         {
           diaDaSemana: 2,
@@ -116,7 +139,17 @@ export const state = () => ({
             minutes: 50,
           }
         }
-      ]
+      ],
+      entregas: [
+        {
+          nome: 'P1',
+          data: '23/04/2022',
+        },
+        {
+          nome: 'P2',
+          data: '15/06/2022',
+        }
+      ],
     },
   ],
 })

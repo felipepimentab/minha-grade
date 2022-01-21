@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@felipepimentab 
-UpperSoft
-/
-ouvidoria-web
-Private
-4
-00
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Security
-Insights
-ouvidoria-web/src/components/base/svg/SVG.vue
-@felipepimentab
-felipepimentab feat(ticket details): various corrections
-…
-Latest commit 8a2a87d 4 days ago
- History
- 2 contributors
-@felipepimentab@Matheusgfgl
-371 lines (363 sloc)  13.8 KB
-   
 <template>
   <svg
     v-if="name"
@@ -52,12 +20,16 @@ Latest commit 8a2a87d 4 days ago
 <script>
 // Import SVGs here
 const Menu = () => import('@/components/svg/Menu.vue');
+const Options = () => import('@/components/svg/Options.vue');
+const Share = () => import('@/components/svg/Share.vue');
 
 export default {
   name: 'SvgBase',
   components: {
     // Load them here
     Menu,
+    Options,
+    Share,
   },
   props: {
     icon: {
@@ -95,7 +67,11 @@ export default {
     iconData() {
       switch (this.name) {
         case 'Menu':
-        return this.defaultData('24', '24');
+          return this.defaultData('24', '24');
+        case 'Options':
+          return this.defaultData('24', '24');
+        case 'Share':
+          return this.defaultData('24', '24');
         default:
           return this.defaultData('200');
       }

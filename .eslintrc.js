@@ -11,10 +11,14 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'prettier'
+    'prettier',
+    'eslint:recommended',
+    'plugin:vue/vue3-essential'
   ],
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'no-unused-vars': [1, { 'args': 'all', 'argsIgnorePattern': '^_' }]
+  }
 }

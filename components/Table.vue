@@ -55,11 +55,14 @@ export default {
 .table {
   width: 100%;
   max-width: 50rem;
-  padding: 0.5rem;
   margin: auto;
+  background-color: rgba($color: #fff, $alpha: 0.05);
+  border-radius: $radius-lg;
 
   &__head {
-    width: 100%;
+    padding: 0.5rem 0;
+    margin: 0 0.5rem;
+    border-bottom: $border-1 solid rgba($color: #fff, $alpha: 0.05);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
