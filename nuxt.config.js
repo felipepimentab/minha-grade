@@ -63,7 +63,10 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      name: 'Minha Grade',
+      short_name: 'Minha Grade',
+      background_color: '#000000',
+      lang: 'pt-br',
     }
   },
 

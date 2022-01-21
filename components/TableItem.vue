@@ -1,11 +1,12 @@
 <template>
   <div
     class="class"
+    :class="`class--${color}`"
     :style="classStyle"
   >
     <span class="begin">{{ startTime.hours }}:{{ startTime.minutes === 0 ? '00' : startTime.minutes }}</span>
     <span class="end">{{ endTime.hours }}:{{ endTime.minutes === 0 ? '00' : endTime.minutes }}</span>
-    <span class="class__text">SEL0123</span>
+    <span class="class__text">{{ codigo }}</span>
   </div>
 </template>
 
@@ -20,11 +21,26 @@ export default {
       type: Object,
       required: true,
     },
+    codigo: {
+      type: String,
+      required: true,
+    }
   },
 
   data() {
     return {
       classStyle: null,
+    }
+  },
+
+  computed: {
+    listOfClasses() {
+      // return this.$store.state.classes.classList;
+      return this.$store.state.classes.placeholderData; 
+    },
+
+    color() {
+      return this.listOfClasses.find(element => element.codigo === this.codigo).cor
     }
   },
 
@@ -34,7 +50,7 @@ export default {
 
     this.classStyle = `top: ${startPosition + '%'};
                        height: ${classHeight + '%'};`
-  }
+  },
 }
 </script>
 
@@ -46,7 +62,6 @@ export default {
   position: absolute;
   width: 100%;
   justify-content: center;
-  background-color: rgba(#fff, 0.5);
   border-radius: 3px;
 
   &__text {
@@ -67,6 +82,18 @@ export default {
     font-size: 0.5rem;
     bottom: 0;
     right: 0.2rem;
+  }
+
+  &--vermelho {
+    background-color: rgba($color: rgb(167, 50, 50), $alpha: 0.6);
+  }
+
+  &--azul {
+    background-color: rgba($color: rgb(54, 54, 167), $alpha: 0.6);
+  }
+
+  &--amarelo {
+    background-color: rgba($color: rgb(156, 156, 65), $alpha: 0.6);
   }
 }
 </style>

@@ -16,9 +16,11 @@ export const state = () => ({
       },
       eletiva: true,
       laboratorio: false,
+      cor: 'azul',
       aulas: [
         {
           diaDaSemana: 2,
+          codigo: 'SEL0339',
           timeBegin: {
             hours: 10,
             minutes: 10,
@@ -30,6 +32,7 @@ export const state = () => ({
         },
         {
           diaDaSemana: 5,
+          codigo: 'SEL0339',
           timeBegin: {
             hours: 20,
             minutes: 30,
@@ -66,9 +69,11 @@ export const state = () => ({
       },
       eletiva: false,
       laboratorio: false,
+      cor: 'vermelho',
       aulas: [
         {
           diaDaSemana: 3,
+          codigo: 'SEL0329',
           timeBegin: {
             hours: 10,
             minutes: 10,
@@ -80,6 +85,7 @@ export const state = () => ({
         },
         {
           diaDaSemana: 4,
+          codigo: 'SEL0329',
           timeBegin: {
             hours: 14,
             minutes: 20,
@@ -116,9 +122,11 @@ export const state = () => ({
       },
       eletiva: false,
       laboratorio: false,
+      cor: 'amarelo',
       aulas: [
         {
           diaDaSemana: 2,
+          codigo: 'SME0320',
           timeBegin: {
             hours: 16,
             minutes: 20,
@@ -130,6 +138,7 @@ export const state = () => ({
         },
         {
           diaDaSemana: 4,
+          codigo: 'SME0320',
           timeBegin: {
             hours: 8,
             minutes: 10,

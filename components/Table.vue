@@ -55,13 +55,13 @@ export default {
 .table {
   width: 100%;
   max-width: 50rem;
+  padding: 0.5rem;
   margin: auto;
   background-color: rgba($color: #fff, $alpha: 0.1);
   border-radius: $radius-lg;
 
   &__head {
-    padding: 0.5rem 0;
-    margin: 0 0.5rem;
+    padding-bottom: 0.5rem;
     border-bottom: $border-1 solid rgba($color: #fff, $alpha: 0.1);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -74,6 +74,10 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &__text {
+        font-size: $text-sm;
+      }
     }
   }
 

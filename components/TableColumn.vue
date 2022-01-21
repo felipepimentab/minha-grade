@@ -6,6 +6,7 @@
         :key="aula"
         :start-time="aula.timeBegin"
         :end-time="aula.timeEnd"
+        :codigo="aula.codigo"
       />
     </div>
   </div>
@@ -22,19 +23,6 @@ export default {
       type: Array,
       required: true,
     },
-  },
-
-  data() {
-    return {
-      comeco: {
-        hours: 23,
-        minutes: 10,
-      },
-      fim: {
-        hours: 24,
-        minutes: 0
-      }
-    }
   },
 
   computed: {

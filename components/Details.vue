@@ -114,7 +114,7 @@ export default {
 <style lang="scss" scoped>
 .details {
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: rgba($color: #fff, $alpha: 0.1);
   border-radius: $radius-lg;
 
@@ -148,6 +148,7 @@ export default {
 
   &__code {
     font-size: $text-base;
+    color: $text-darken;
   }
 
   &__tags {
