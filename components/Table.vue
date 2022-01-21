@@ -56,13 +56,13 @@ export default {
   width: 100%;
   max-width: 50rem;
   margin: auto;
-  background-color: rgba($color: #fff, $alpha: 0.05);
+  background-color: rgba($color: #fff, $alpha: 0.1);
   border-radius: $radius-lg;
 
   &__head {
     padding: 0.5rem 0;
     margin: 0 0.5rem;
-    border-bottom: $border-1 solid rgba($color: #fff, $alpha: 0.05);
+    border-bottom: $border-1 solid rgba($color: #fff, $alpha: 0.1);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
