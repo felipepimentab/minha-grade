@@ -9,11 +9,21 @@ $transparent: transparent;
 
 // Theme
 $background: #2f2546;
-$text-main: #ebebeb;
-$text-darken: #929292;
 
-// Blue
+// Light Mode:
+$text-main-light: #1b1b1b;
+$text-secondary-light: #414141;
+
+// Dark Mode:
+$text-main-dark: #ebebeb;
+$text-secondary-dark: #929292;
+
+// Night Mode:
+$text-main-night: #ebebeb;
+$text-secondary-night: #929292;
+
+// Blues
 $blue-tag: #4360b6;
 
-// Yellow
+// Yellows
 $yellow-tag: #b8b83e;

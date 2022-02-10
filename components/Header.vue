@@ -46,15 +46,15 @@ export default {
   background-color: rgba($color: #fff, $alpha: 0);
 
   .title {
-    font-size: 1rem;
+    font-size: $text-lg;
     font-weight: bold;
-    color: $text-main;
+    color: $text-main-dark;
     text-decoration: none;
   }
 
   .sandwich-menu {
     &__icon{
-      fill: $text-main;
+      fill: $text-main-dark;
     }
 
     .side-menu {

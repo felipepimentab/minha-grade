@@ -141,14 +141,14 @@ export default {
       border-radius: $radius-lg;
 
       &__icon {
-        fill: $text-main;
+        fill: $text-main-dark;
       }
     }
   }
 
   &__code {
     font-size: $text-base;
-    color: $text-darken;
+    color: $text-secondary-dark;
   }
 
   &__tags {
@@ -190,7 +190,7 @@ export default {
 
     &__label {
       font-size: $text-sm;
-      color: $text-darken;
+      color: $text-secondary-dark;
     }
 
     &__name {
@@ -207,7 +207,7 @@ export default {
 
     &__label {
       font-size: $text-sm;
-      color: $text-darken;
+      color: $text-secondary-dark;
     }
 
     &__link {
@@ -222,7 +222,7 @@ export default {
 
     &__label {
       font-size: $text-sm;
-      color: $text-darken;
+      color: $text-secondary-dark;
     }
 
     &__list {

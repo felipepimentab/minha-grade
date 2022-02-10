@@ -24,8 +24,8 @@ body, html {
   left: 0;
   font-size: 12px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  background: black;
-  color: $text-main;
+  background: #101010;
+  color: $text-main-dark;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
