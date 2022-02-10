@@ -62,9 +62,11 @@ export default {
 
   &__head {
     padding-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     border-bottom: $border-1 solid rgba($color: #fff, $alpha: 0.1);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0.25rem;
 
     @media screen and (min-width: 1024px) {
       grid-template-columns: 2rem 1fr 1fr 1fr 1fr 1fr;
@@ -107,6 +109,7 @@ export default {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 0.25rem;
     }
   }
 

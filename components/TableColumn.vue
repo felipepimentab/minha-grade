@@ -50,23 +50,12 @@ export default {
 <style lang="scss" scoped>
 .column {
   width: 100%;
-  padding: 5px 2.5px;
   height: 25rem;
 
   &-content {
     width: 100%;
     position: relative;
     height: 100%;
-  }
-  
-  &:first-child {
-    border-radius: 3px 0 0 3px;
-    padding-left: 5px;
-  }
-
-  &:last-child {
-    border-radius: 0 3px 3px 0;
-    padding-right: 5px;
   }
 }
 </style>
