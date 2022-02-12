@@ -10,9 +10,12 @@
         />
       </div>
       <div class="side-menu" :class="{'side-menu--active' : menuIsOpen}">
-        <NuxtLink to="/about" class="side-menu__item">Sobre</NuxtLink>
-        <NuxtLink to="/classes" class="side-menu__item">Disciplinas</NuxtLink>
-        <NuxtLink to="/login" class="side-menu__item">Login</NuxtLink>
+        <div class="side-menu__links">
+          <NuxtLink to="/about" class="side-menu__item">Sobre</NuxtLink>
+          <NuxtLink to="/classes" class="side-menu__item">Disciplinas</NuxtLink>
+          <NuxtLink to="/login" class="side-menu__item">Login</NuxtLink>
+        </div>
+      <p>Opções</p>
       </div>
     </div>
   </header>
@@ -28,19 +31,33 @@ export default {
     }
   },
 
+  created() {
+    console.log('----------------------')
+    console.log('color mode value:', this.$colorMode.value);
+    console.log('----------------------')
+  },
+
   methods: {
     toggleMenu() {
       this.menuIsOpen = !this.menuIsOpen;
     }
-  }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
+.dark-mode {
+  .side-menu {
+    background: rgba($color: $background-dark, $alpha: 0.7);
+  }
+}
+
 .header {
   width: 100%;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   padding: 1rem;
   background-color: rgba($color: #fff, $alpha: 0);
@@ -58,29 +75,34 @@ export default {
     }
 
     .side-menu {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
       position: fixed;
-      background-color: rgba($color: #000, $alpha: 0.5);
       backdrop-filter: blur(0.1rem);
-      top: 4.25rem;
+      top: 3.5rem;
       right: -100vw;
       width: 100vw;
-      height: calc(100vh - 4.25rem);
+      height: calc(100vh - 1.5rem);
       padding: 1rem;
       transition: all 0.5s ease-in-out;
-      z-index: 10;
 
       &--active {
-        right: 0;
+        right: 1rem;
       }
 
       &__item {
         font-size: 1rem;
         padding: 0.5rem;
       }
+
+      &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+  
+  
+      }
     }
+
+    
   }
 
   .nuxt-link-exact-active {

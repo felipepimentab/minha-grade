@@ -57,6 +57,41 @@ export default {
     '@nuxtjs/pwa',
     // style
     '@nuxtjs/style-resources',
+    // Nuxt Firebase https://firebase.nuxtjs.org/
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyAXOXgxbQsnmZzel8eIRhbrCmmCfBXNSEw",
+          authDomain: "minha-grade-265c7.firebaseapp.com",
+          projectId: "minha-grade-265c7",
+          storageBucket: "minha-grade-265c7.appspot.com",
+          messagingSenderId: "17615535995",
+          appId: "1:17615535995:web:d56ed17923256a6c61c7de",
+          measurementId: "G-BQEJ6MP7RD"
+        },
+        services: {
+          auth: {
+            persistence: 'local', // default
+            initialize: {
+              onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
+              onAuthStateChangedAction: 'onAuthStateChangedAction',
+              subscribeManually: false
+            },
+            ssr: false, // default
+            emulatorPort: 9099,
+            emulatorHost: 'http://localhost',
+          },
+          storage: true,
+          database: {
+            emulatorPort: 9000,
+            emulatorHost: 'http://localhost',
+          },
+          performance: true,
+          analytics: true,
+        }
+      }
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
