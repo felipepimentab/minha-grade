@@ -3,7 +3,7 @@ export const state = () => ({
   userName: null,
 })
 
-export const actions = () => ({
+/* export const actions = () => ({
   onAuthStateChangedAction: (ctx, { authUser, claims }) => {
     if (!authUser) {
       // claims = null
@@ -12,11 +12,11 @@ export const actions = () => ({
       // Do something with the authUser and the claims object...
     }
   }
-})
+}) */
 
-export const mutations = () => ({
+/* export const mutations = () => ({
   ON_AUTH_STATE_CHANGED_MUTATION: (state, { authUser, claims }) => {
     const { uid, email, emailVerified } = authUser
     state.user = { uid, email, emailVerified }
   }
-})
+}) */
