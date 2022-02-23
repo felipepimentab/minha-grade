@@ -58,7 +58,7 @@ export default {
     // style
     '@nuxtjs/style-resources',
     // Nuxt Firebase https://firebase.nuxtjs.org/
-    [
+/*  [
       '@nuxtjs/firebase',
       {
         config: {
@@ -91,7 +91,7 @@ export default {
           analytics: true,
         }
       }
-    ]
+    ] */
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

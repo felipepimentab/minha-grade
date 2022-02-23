@@ -86,8 +86,14 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   computed: {
+    ...mapState([
+      'classes/placeholderData',
+      'classes/selectedClass'
+    ]),
+
     listOfClasses() {
       // return this.$store.state.classes.classList;
       return this.$store.state.classes.placeholderData; 

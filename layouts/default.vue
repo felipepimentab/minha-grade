@@ -18,16 +18,12 @@ body, html {
 .app {
   width: 100vw;
   min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+  position: absolute;
   top: 0;
   left: 0;
   font-size: 12px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   color: $text-main-dark;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .dark-mode .app {

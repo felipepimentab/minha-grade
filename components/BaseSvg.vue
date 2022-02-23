@@ -22,6 +22,7 @@
 const Menu = () => import('@/components/svg/Menu.vue');
 const Options = () => import('@/components/svg/Options.vue');
 const Share = () => import('@/components/svg/Share.vue');
+const Adicionar = () => import('@/components/svg/Adicionar.vue');
 
 export default {
   name: 'SvgBase',
@@ -30,6 +31,7 @@ export default {
     Menu,
     Options,
     Share,
+    Adicionar,
   },
   props: {
     icon: {
@@ -71,6 +73,8 @@ export default {
         case 'Options':
           return this.defaultData('24', '24');
         case 'Share':
+          return this.defaultData('24', '24');
+        case 'Adicionar':
           return this.defaultData('24', '24');
         default:
           return this.defaultData('200');
