@@ -15,18 +15,23 @@
       {{ listOfClasses[selectedClass].codigo }}
     </h3>
     <div class="details__tags">
-      <p class="tag-lab">
-        #laboratório
+      <p
+        v-if="listOfClasses[selectedClass].laboratorio"
+        class="tag-lab"
+      >
+        laboratório
       </p>
       <p
+        v-if="listOfClasses[selectedClass].eletiva"
         class="tag-eletiva"
       >
-        #eletiva
+        eletiva
       </p>
       <p
+        v-else
         class="tag-obrigatoria"
       >
-        #obrigatória
+        obrigatória
       </p>
     </div>
     <div class="details__prof">
@@ -168,13 +173,14 @@ export default {
       background-color: rgba($color: $blue-tag, $alpha: 0.2);
       padding: 0.1rem 0.3rem;
       border-radius: $radius-lg;
+      margin-right: 0.5rem;
     }
 
     .tag-eletiva {
       color: $yellow-tag;
       background-color: rgba($color: $yellow-tag, $alpha: 0.2);
       padding: 0.1rem 0.3rem;
-      margin-left: 0.5rem;
+      margin-right: 0.5rem;
       border-radius: $radius-lg;
     }
 
@@ -182,7 +188,6 @@ export default {
       color: #7eb828;
       background-color: rgba($color: #7eb828, $alpha: 0.2);
       padding: 0.1rem 0.3rem;
-      margin-left: 0.5rem;
       border-radius: $radius-lg;
     }
   }

@@ -6,6 +6,7 @@ export const state = () => ({
       nome: 'Introdução à Visão Computacional',
       codigo: 'SEL0339',
       professor: 'Marcelo Andrade Costa Vieira',
+      sala: 'C01',
       site: {
         nome: 'Moodle',
         link: 'https://edisciplinas.usp.br/enrol/index.php?id=91229',
@@ -59,6 +60,7 @@ export const state = () => ({
       nome: 'Conversão Eletromecânica de Energia',
       codigo: 'SEL0329',
       professor: 'José Carlos de Melo Vieira Júnior',
+      sala: 'C01',
       site: {
         nome: 'Moodle',
         link: 'https://edisciplinas.usp.br/enrol/index.php?id=91030',
@@ -112,6 +114,7 @@ export const state = () => ({
       nome: 'Estatística 1',
       codigo: 'SME0320',
       professor: 'Eduardo Fontoura Costa',
+      sala: 'C01',
       site: {
         nome: 'Moodle',
         link: 'https://edisciplinas.usp.br/enrol/index.php?id=92645',

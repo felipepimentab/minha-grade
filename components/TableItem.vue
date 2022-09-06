@@ -48,8 +48,7 @@ export default {
     const startPosition = (this.startTime.hours - 6) * (100 / 18) + (this.startTime.minutes) * (100 / (18 * 60));
     const classHeight = ((this.endTime.hours - 6) * (100 / 18) + (this.endTime.minutes) * (100 / (18 * 60))) - startPosition;
 
-    this.classStyle = `top: ${startPosition + '%'};
-                       height: ${classHeight + '%'};`
+    this.classStyle = `top: ${startPosition + '%'}; height: ${classHeight + '%'};`
   },
 }
 </script>
